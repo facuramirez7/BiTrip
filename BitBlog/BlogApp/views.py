@@ -7,4 +7,6 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 # Create your views here.
 
 def index(request):
-    return HttpResponse('<H1>HOLA</H1>')
+    return render(request, "BlogApp/index.html")
+
+
