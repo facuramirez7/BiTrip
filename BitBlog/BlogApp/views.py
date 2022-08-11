@@ -6,7 +6,22 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 
 # Create your views here.
 
+
+#INDEX
 def index(request):
     return render(request, "BlogApp/index.html")
+
+
+
+#CRIPTOS
+def index_c(request):
+    return render(request, "BlogApp/criptos/index.html")
+
+def listado_c(request):
+    criptos = Cripto.objects.all()
+    context = {
+         "criptos": criptos
+         }
+    return render(request, "BlogApp/criptos/listado.html", context)
 
 

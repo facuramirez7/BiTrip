@@ -1,11 +1,39 @@
 {% extends 'BlogApp/base.html' %}
 
-
 {% block titulo %} Listado de criptos {% endblock %}
 
 
 {% block content %}
+<div class="container text-center">
+    <h3>Listado de criptomonedas</h3>
+    <table class="table table-dark table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">ISO</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Lenguaje</th>
+            <th scope="col">Es Stable?</th>
+          </tr>
+        </thead>
+        <tbody>
 
+            {% for cripto in criptos %}
+            <tr>
+                <td>{{ cripto.nombre }}</td>
+                <td>{{ cripto.iso }}</td>
+                <td>{{ cripto.precio }}</td>
+                <td>{{ cripto.lenguaje }}</td>
+                <td>{% if cripto.stable == 1 %} 
+                    Si 
+                    {% else %} 
+                    No 
+                    {% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table> 
+</div>
 
 
 {% endblock %}
