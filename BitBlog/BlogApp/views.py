@@ -24,4 +24,7 @@ def listado_c(request):
          }
     return render(request, "BlogApp/criptos/listado.html", context)
 
+def create_c(request):
+    return render(request, "BlogApp/criptos/create.html")
+
 

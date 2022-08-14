@@ -7,4 +7,5 @@ urlpatterns = [
     #CRIPTOS¬
     path('cripto/index', views.index_c),
     path('cripto/listado', views.listado_c),
+    path('cripto/create', views.create_c),
 ]

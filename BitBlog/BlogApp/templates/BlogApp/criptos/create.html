@@ -1,0 +1,28 @@
+{% extends 'BlogApp/base.html' %}
+
+{% block titulo %} Crear Cripto {% endblock %}
+
+
+{% block content %}
+
+<div class="container mt-4">
+    <h3>Crear Cripto</h3>
+    <form action="" class="col-12 col-md-4">
+        <label for="Cripto">Cripto</label>
+        <input name="nombre" class="form-control col-4" type="text" placeholder="Nombre de criptomoneda" aria-label="default input example">
+        <label for="ISO" class="mt-3">ISO</label>
+        <input name="iso" class="form-control col-4" type="text" placeholder="ISO" aria-label="bTC">
+        <label for="Precio" class="mt-3">Precio</label>
+        <input name="precio" class="form-control col-4" type="number" placeholder="Price" aria-label="">
+        <label for="Lenguaje de programacion" class="mt-3">Lenguaje de programacion</label>
+        <input name="lenguaje" class="form-control col-4" type="text" placeholder="Programming" aria-label="">
+        <label for="Stable" class="mt-3">Es Stable</label>
+        <select class="form-select" aria-label="Elija una opción">
+            <option value="0" selected>No</option>
+            <option value="1">Sí</option>
+        </select>
+        <button type="submit" class="btn btn-success mt-4">CARGAR</button>
+    </form>
+</div>
+
+{% endblock %}
