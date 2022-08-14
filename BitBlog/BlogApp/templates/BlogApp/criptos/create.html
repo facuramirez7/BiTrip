@@ -7,7 +7,8 @@
 
 <div class="container mt-4">
     <h3>Crear Cripto</h3>
-    <form action="" class="col-12 col-md-4">
+    <form action="/BlogApp/cripto/cr" method="POST" class="col-12 col-md-4"> 
+        {% csrf_token %}
         <label for="Cripto">Cripto</label>
         <input name="nombre" class="form-control col-4" type="text" placeholder="Nombre de criptomoneda" aria-label="default input example">
         <label for="ISO" class="mt-3">ISO</label>
@@ -17,11 +18,11 @@
         <label for="Lenguaje de programacion" class="mt-3">Lenguaje de programacion</label>
         <input name="lenguaje" class="form-control col-4" type="text" placeholder="Programming" aria-label="">
         <label for="Stable" class="mt-3">Es Stable</label>
-        <select class="form-select" aria-label="Elija una opción">
+        <select class="form-select" name="stable" aria-label="Elija una opción">
             <option value="0" selected>No</option>
             <option value="1">Sí</option>
         </select>
-        <button type="submit" class="btn btn-success mt-4">CARGAR</button>
+        <input type="submit" class="btn btn-success mt-4" value="Cargar"></input>
     </form>
 </div>
 
