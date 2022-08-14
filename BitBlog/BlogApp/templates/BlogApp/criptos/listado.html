@@ -19,6 +19,16 @@
           </tr>
         </thead>
         <tbody>
+            {% if error == 0  %}
+                <div class="alert alert-success" role="alert">
+                  {{ mensaje }}
+                </div>
+            {% elif error == 1 %}
+                <div class="alert alert-danger" role="alert">
+                  {{ mensaje }}
+                </div>
+            {% else %}
+            {% endif %}
 
             {% for cripto in criptos %}
             <tr>

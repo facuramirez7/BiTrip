@@ -20,7 +20,8 @@ def index_c(request):
 def listado_c(request):
     criptos = Cripto.objects.all()
     context = {
-         "criptos": criptos
+         "criptos": criptos,
+         "error": '3'
          }
     return render(request, "BlogApp/criptos/listado.html", context)
 
@@ -29,6 +30,8 @@ def create_c(request):
 
 def create_cr(request):
     if(request.method == 'POST'):
+        criptos = Cripto.objects.all()
+        
         nombre = request.POST['nombre']
         iso = request.POST['iso']
         precio = request.POST['precio']
@@ -38,16 +41,16 @@ def create_cr(request):
         
         cripto.save()
         
-        """ context = {
-            "mensaje": 'Creado correctamente',
-            'error' : 0
-            } """
-    """ else:
         context = {
-            "mensaje": 'No se pudo crear  correctamente',
-            'error' : 1
-            } """
-        
-    return render(request, "BlogApp/criptos/index.html")
+            "mensaje": 'Creado correctamente',
+            'error' : '0'
+            }
+    else:
+        context = {
+            "criptos": criptos,
+            "mensaje": 'No se pudo crear correctamente',
+            'error' : '1'
+            }
+    return render(request, "BlogApp/criptos/listado.html", context)
 
 
