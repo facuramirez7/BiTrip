@@ -32,3 +32,5 @@ http://localhost:8000/
   ```bash  
 http://127.0.0.1:8000/
 ```
+**IMPORTANTE**
+Falta vídeo de funcionamiento 07/09/2022
