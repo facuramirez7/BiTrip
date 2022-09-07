@@ -57,8 +57,9 @@ Servidores - CSGOrecs
                                 <td>{{servidor.juegoServer}}</td>
                                 <td>
                                     {% if user.is_superuser %}
-                                    <a href="{% url 'editarServidor' servidor.id %}" class="text-primary badge badge-primary text-decoration-none"> <i class="bi bi-pencil-square"></i> Editar</a>
-                                    <a href="{% url 'servidorDelete' servidor.id %}" class="text-danger badge badge-danger text-decoration-none"> <i class="bi bi-x-square"></i> Eliminar</a>
+                                    <a href="{% url 'editarServidor' servidor.id %}" class="text-primary badge badge-primary text-decoration-none"> <i class="fas fa-edit"></i> Editar</a>
+                                    <a href="{% url 'servidorDelete' servidor.id %}" class="text-danger badge badge-danger text-decoration-none"> <i class="fas fa-trash-alt"></i> Eliminar</a>
+                                    <a href="{% url 'servidorDetail' servidor.id %}" class="text-success badge badge-danger text-decoration-none"> <i class="fas fa-info-circle"></i> Detalles</a>
                                     {% endif %}
                                 </td>
                             </tr>

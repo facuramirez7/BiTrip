@@ -19,6 +19,8 @@ urlpatterns = [
     path('eliminarjuego/<juego_id>', eliminarJuego, name = "eliminarJuego"),
     path('editarJuego/<juego_id>', editarJuego, name = "editarJuego"),
     
+    
+    #juego
     path('juegos/', juegos, name= "juegos"),
     path('juegos/list', JuegoList.as_view(), name = "juegosList"),
     path('juegos/detail/<pk>', JuegoDetail.as_view(), name = "juegoDetail"),       ###
@@ -27,11 +29,9 @@ urlpatterns = [
     path('juegos/eliminar/<pk>', JuegoDelete.as_view(), name = "juegoDelete"),       ###
     
     
-    # path('crearservidor/', crearServidor, name= "crearservidor"),
-    # path('eliminarServidor/<servidor_id>', eliminarJuego, name = "eliminarServidor"),
-    
-    path('editarServidor/<servidor_id>', editarServidor, name = "editarServidor"),
-    
+
+    #serv
+    path('editarServidor/<servidor_id>', editarServidor, name = "editarServidor"),   
     path('servidores/', servidores, name= "servidores"),
     path('servidores/list', ServidorList.as_view(), name= "servidoresList"),
     path('servidores/detail/<pk>', ServidorDetail.as_view(), name = "servidorDetail"),       

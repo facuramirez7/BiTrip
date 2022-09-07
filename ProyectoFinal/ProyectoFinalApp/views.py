@@ -472,9 +472,8 @@ class ServidorList(ListView):
 
 
 class ServidorDetail(DetailView):
-
     model = Servidor
-    template_name = "app/servidorDetail.html"
+    template_name = "ProyectoFinalApp/servidorDetail.html"
 
 
 class ServidorCreate(CreateView):

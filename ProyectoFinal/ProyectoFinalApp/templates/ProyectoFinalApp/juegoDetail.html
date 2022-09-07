@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% extends 'ProyectoFinalApp/base.html' %}
+    {% load static %}
+
+    {% block tituloPagina %}
+    Juego {{juego.nombre}}  - CSGOrecs
+    {% endblock %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de juegos</title>
 </head>
-<body>
+{% block contenidoPagina %}
+<section class="text-center">
     <h2>Detalle de juego:</h2>
     <p>Nombre: {{juego.nombre}}</p>
     <p>Genero: {{juego.genero}}</p>
+    <a href="{% url 'juegos' %}">Regresar a la lista de Juegos</a>
+</section>
 
-    <a href="{% url 'juegosList' %}">Regresar a la lista de Juegos</a>
-</body>
-</html>
+
+    
+{% endblock %}
