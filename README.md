@@ -34,4 +34,4 @@ http://127.0.0.1:8000/
 ```
 **IMPORTANTE**
 <br>
-Falta vídeo de funcionamiento 07/09/2022
+Falta vídeo de funcionamiento y TESTS 07/09/2022
