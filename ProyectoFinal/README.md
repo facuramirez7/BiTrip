@@ -10,6 +10,7 @@ Facundo Ramirez
  
  
 Para utilizar el proyecto seguir los siguientes pasos:
+<br>
 1.Django
 ```bash
 python -m pip install django
