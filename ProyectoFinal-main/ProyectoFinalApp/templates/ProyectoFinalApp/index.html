@@ -1,0 +1,48 @@
+{% extends 'ProyectoFinalApp/base.html'%}
+{% load static %}
+
+{% block tituloPagina %}
+Inicio - CSGOrecs
+{% endblock %}
+
+{% block contenidoPagina %}
+<!DOCTYPE html>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://gepig.com/game_cover_bg_1190w/307.jpg')">
+            <div class="text-center my-5">
+                <img class="img-fluid mb-4" src="https://www.pngkey.com/png/full/80-803234_counter-strike-logo-png-pic-counter-strike-global.png" alt="CSGO" />
+                <h1 class="text-white fs-3 fw-bolder">CSGOrecs </h1>
+                <p class="text-white-50 mb-0">Estadisticas de videojuegos</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+               <div class="row justify-content-center"> 
+                    <div class="col-lg-6 text-center">
+                        <h2>CSGOrecs</h2>
+                        <p class="lead">Récords mundiales en Counter Stirke Global Offensive!</p>
+                        <p class="mb-0">Ésta website almacena los records de jugadores en todo el mundo!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <div class="py-5 bg-image-fit" style="background-image: url('https://imag.malavida.com/mvimgbig/download-fs/counter-strike-3737-2.jpg')">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 17rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 text-center">
+                        <h2>Avalado por <img src="https://static.wikia.nocookie.net/halflife7283/images/c/cb/800px-Valve_logo.svg.png/revision/latest?cb=20131211233808&path-prefix=es" alt="Valve" height="30px"></h2>
+                        <p class="lead">Entregamos cajas para los jugadores que estén en el Top.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+{% endblock %}
