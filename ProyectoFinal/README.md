@@ -6,12 +6,12 @@
  
  
 ## Autor
-Facundo Ramirez
+<b>Facundo Ramirez</b>
  
  
 Para utilizar el proyecto seguir los siguientes pasos:
 <br>
-1.Django
+1. Django
 ```bash
 python -m pip install django
 ```
