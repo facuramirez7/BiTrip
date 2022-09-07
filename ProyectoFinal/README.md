@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ```bash  
 python manage.py runserver
 ```
-4.
+4. Ingresar en la barra del Browser:
   ```bash  
 http://localhost:8000/
 ```
