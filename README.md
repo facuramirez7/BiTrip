@@ -39,3 +39,10 @@ http://127.0.0.1:8000/
 **IMPORTANTE**
 <br>
 Falta vídeo de funcionamiento y TESTS 07/09/2022
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[Python.js]: https://img.shields.io/badge/Python-20232A?style=for-the-badge&logo=python&logoColor=lightgrey
+[Python-url]: https://www.python.org/
+[Django.js]: https://img.shields.io/badge/Django-20232A?style=for-the-badge
+[Django-url]: https://www.djangoproject.com/
