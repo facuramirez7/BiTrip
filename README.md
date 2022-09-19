@@ -2,6 +2,7 @@
 ## CoderHouse - ProyectoFinal 
  
 **CSGOrecs** es una web en la que se almacenan jugadores, servidores y modos de juego del juego Counter Strike.
+**CSGOrecs** is a website where players, servers and game modes of the Counter Strike game are stored.
  
  
  
